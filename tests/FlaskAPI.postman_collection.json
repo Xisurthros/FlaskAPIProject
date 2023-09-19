@@ -1,0 +1,536 @@
+{
+	"info": {
+		"_postman_id": "de874499-b800-44c8-a0b9-ba9315c80886",
+		"name": "FlaskAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tables",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/tables",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"tables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Table",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"testingTable\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/create-table",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"create-table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Table",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"testingTable\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/delete-table",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"delete-table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Table Columns",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/columns",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"columns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Column",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\",\n    \"column_name\": \"testColumn\",\n    \"column_type\": \"text\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/create-column",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"create-column"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Column",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\",\n    \"column_name\": \"testColumn1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/delete-column",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"delete-column"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Column Name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\",\n    \"column_name\": \"testColumn\",\n    \"new_column_name\": \"testColumn\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/update-column-name",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"update-column-name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Column Type",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\",\n    \"column_name\": \"pokemon_type\",\n    \"new_column_type\": \"text\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/update-column-type",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"update-column-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rows",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/rows",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"rows"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Row",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\", \n    \"row_data\": {\"pokemon_number\": \"5\", \n                \"pokemon_name\": \"Testing5\", \n                \"pokemon_type\": \"Grass\", \n                \"notes\": \"Please Work\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/insert-row",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"insert-row"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Row",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\", \n    \"column_name\": \"pokemon_name\", \n    \"column_value\": \"Testing5\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/select-row",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"select-row"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Row",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\", \n    \"row_id\": \"1\", \n    \"new_row_data\": {\n        \"id\": 1,\n        \"notes\": \"Please Work\",\n        \"pokemon_name\": \"Updated Name\",\n        \"pokemon_number\": \"5\",\n        \"pokemon_type\": \"Grass\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/update-row",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"update-row"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Row",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "x-api-key",
+						"value": "hfy92kadHgkk29fahjsu3j922v9sjwaucahf",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\": \"pokemon_jhobbs\", \"row_id\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/delete-row",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"delete-row"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
